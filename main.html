@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>User Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <section class="form-section">
+    <form id="user-form">
+      <div class="form-group">
+        <label class="input-label" for="fullName">
+          <img src="name.png" alt="User Icon" class="icon"> Full Name:
+        </label>
+        <input type="text" id="fullName" class="form-input" required />
+      </div>
+
+      <div class="form-group">
+        <label class="input-label" for="email">
+          <img src="mail.png" alt="Email Icon" class="icon"> Email Address:
+        </label>
+        <input type="email" id="email" class="form-input" required />
+      </div>
+
+      <div class="form-group">
+        <label class="input-label" for="age">
+          <img src="age.png" alt="Age Icon" class="icon"> Age:
+        </label>
+        <input type="number" id="age" class="form-input" required />
+      </div>
+
+      <div class="form-group">
+        <label class="input-label" for="hobby">
+          <img src="hobby.png" alt="Hobby Icon" class="icon"> Hobby:
+        </label>
+        <input type="text" id="hobby" class="form-input" required />
+      </div>
+
+      <button type="submit" class="submit-button">Submit</button>
+      <p id="error-message" class="error-message"></p>
+    </form>
+  </section>
+
+  <section>
+    <h2>Qualifying Users</h2>
+    <ul id="people-list" class="grid-container"></ul>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
